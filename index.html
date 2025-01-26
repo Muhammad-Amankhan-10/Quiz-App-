@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+        <!-- Welcome Screen -->  
+    <div class="container">
+        <div class="welcome-screen active">
+            <h1>Welcome To Quiz App</h1>
+            <button id="startQuiz">Start Quiz</button>
+        </div>
+
+        <!-- Topic Selection Screen -->
+        <div class="topic-screen">
+            <h1>Select a Topic</h1>
+            <div class="box-container">
+                <div class="box" data-topic="html">HTML</div>
+                <div class="box" data-topic="css">CSS</div>
+                <div class="box" data-topic="javascript">JavaScript</div>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div class="quiz-screen">
+            <div id="timer"></div>
+            <div id="question" class="question"></div>
+            <div id="options" class="options"></div>
+        </div>
+
+        <!-- Result Screen -->
+        <div class="result-screen">
+            <h1>Congratulations! Your answers were submitted.</h1>
+            <div id="result"></div>
+            <button id="exitQuiz" class="exit">Exit Quiz</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
+<script src="script.js"></script>
